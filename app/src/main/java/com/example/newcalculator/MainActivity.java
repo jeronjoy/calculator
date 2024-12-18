@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-Button b1;
+Button b1,b3;
 Button b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ Button b2;
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 b1=(Button) findViewById(R.id.add);
+b2=(Button) findViewById(R.id.sub);
 b2=(Button) findViewById(R.id.sub);
 b1.setOnClickListener(new View.OnClickListener() {
     @Override
