@@ -21,7 +21,7 @@ Button b2;
         setContentView(R.layout.activity_main);
 b1=(Button) findViewById(R.id.add);
 b2=(Button) findViewById(R.id.sub);
-b2=(Button) findViewById(R.id.sub);
+b3=(Button) findViewById(R.id.mul);
 b1.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
@@ -35,6 +35,13 @@ b1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent a=new Intent(getApplicationContext(), SubActivity.class);
                 startActivity(a);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent b=new Intent(getApplicationContext(), MulActivity.class);
+                startActivity(b);
             }
         });
     }
